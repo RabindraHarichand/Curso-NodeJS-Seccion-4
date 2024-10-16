@@ -5,15 +5,19 @@
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node src/app.js",
-    "dev": "nodemon src/app.js",
-    "start:dev": "echo 'Hola mundo desde dev'",
-    "start:stag": "echo 'Hola mundo desde dev'"
+    "build": "rimraf ./dist && tsc",
+    "start": "npm run build && node dist/app.js",
+    "dev": "nodemon"
   },
   "author": "Rabindra Harichand",
   "license": "MIT",
   "devDependencies": {
-    "nodemon": "^3.1.7"
+    "@types/node": "^22.7.5",
+    "@types/uuid": "^10.0.0",
+    "nodemon": "^3.1.7",
+    "rimraf": "^6.0.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.6.3"
   },
   "dependencies": {
     "axios": "^1.7.7",
