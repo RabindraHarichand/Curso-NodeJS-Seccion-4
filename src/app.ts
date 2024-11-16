@@ -5,19 +5,19 @@
 // const { getAge, getUUID } = require("./plugin/index");
 // const { buildMakePerson } = require("./js-foundation/05-factory");
 
-import { getPokemonNameById } from "./js-foundation/06-promises";
-import { buildLogger } from "./plugin/logger.plugin";
+// import { getPokemonNameById } from "./js-foundation/06-promises";
+// import { buildLogger } from "./plugin/logger.plugin";
 
-const logger = buildLogger("app.js");
+// const logger = buildLogger("app.js");
 
 // logger.log("Hola Mundo");
 // logger.error("Esto es algo malo");
 // const name = getPokemonNameById(3);
 
-const info = getPokemonNameById(37)
-  .then((pokemon) => console.log({ pokemon }))
-  .catch((err) => console.error("Por favor intente de nuevo "))
-  .finally(() => console.log("Finalmente"));
+// const info = getPokemonNameById(37)
+//   .then((pokemon) => console.log({ pokemon }))
+//   .catch((err) => console.error("Por favor intente de nuevo "))
+//   .finally(() => console.log("Finalmente"));
 
 // ! Referencia a la funcion factory y uso
 // const makePerson = buildMakePerson({ getAge, getUUID });
