@@ -23,7 +23,10 @@ export function getUserById(
   });
 
   if (!user) {
-    return callback(`USUARIO NO ENCONTRADO ${id}`);
+    setTimeout(() => {
+      callback(`USUARIO NO ENCONTRADO ${id}`);
+    }, 2500);
+    return;
   }
 
   return callback(undefined, user);
